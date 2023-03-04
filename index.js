@@ -7,10 +7,9 @@ function populate() {
     document.getElementById("collectedImage1").src="image";
 }
 
-function remove() {
-    localStorage.removeItem('image1');
-    const element = document.getElementById("collectedImage1");
-    element.remove();
+function remove(element) {
+    localStorage.removeItem(element);
+    element.parentElement.remove();
 }
 
 function addToStorage(element) {
