@@ -61,3 +61,8 @@
             width: 100%;
         }
     }
+
+    .small-img {
+        max-width: 20%;
+        height: auto;
+      }

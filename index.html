@@ -27,8 +27,22 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
         <h2>Pick your favorite ducks!</h2>
         <p>Like a duck? Add it to <a onclick="populate()" href="collection.html">Your Collection</a></p>
 
+        <div>Ducks:
+            <div class="images"></div>
+        </div>
+        <script> 
+                const images = ['big-duck.jpg', 'fancy-duck.jpg', 'red-duck.jpg', 'water-duck.jpg']
+
+            for (let x = 0; x < images.length; x++) {            
+                const element = '<img class="small-img" src="' + images[x] + '">'
+                document.querySelector('.images').innerHTML += element;
+            }
+
+        </script>
+        
+
         <!-- Portfolio Gallery Grid -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="column">
                 <div class="content">
                     <img id="image1" src="big-duck.jpg" alt="big duck" style="width:100%" >
@@ -57,7 +71,7 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
                     <button>SAVE</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <script src="index.js"></script>
