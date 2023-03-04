@@ -12,3 +12,6 @@ function remove() {
     const element = document.getElementById("collectedImage1");
     element.remove();
 }
+
+
+
