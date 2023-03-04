@@ -25,15 +25,15 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
         <hr>
 
         <h2>Pick your favorite ducks!</h2>
-        <p>Like a duck? Add it to <a href="collection.html">Your Collection</a></p>
+        <p>Like a duck? Add it to <a onclick="populate()" href="collection.html">Your Collection</a></p>
 
         <!-- Portfolio Gallery Grid -->
         <div class="row">
             <div class="column">
                 <div class="content">
-                    <img src="big-duck.jpg" alt="big duck" style="width:100%">
+                    <img id="image1" src="big-duck.jpg" alt="big duck" style="width:100%" >
                     <h3>Like This Duck? Click the button to save it to your collection.</h3>
-                    <button>SAVE</button>
+                    <button onclick="addImage1()" >SAVE</button>
                 </div>
             </div>
             <div class="column">
@@ -59,14 +59,9 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
             </div>
         </div>
 
-        <div class="content">
-            <img src="bear.jpg" alt="Bear" style="width:100%">
-            <h3>Some Other Work</h3>
-            <p>Lorem ipsum..</p>
-        </div>
-
-        <!-- END MAIN -->
     </div>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
