@@ -13,5 +13,8 @@ function remove() {
     element.remove();
 }
 
+function addToStorage(element) {
+    localStorage.setItem(element.id, "image");
+}
 
 

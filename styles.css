@@ -65,4 +65,8 @@
     .small-img {
         max-width: 20%;
         height: auto;
-      }
+    }
+
+    .img-card {
+        float: left;
+    }

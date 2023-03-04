@@ -33,8 +33,9 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
         <script> 
                 const images = ['big-duck.jpg', 'fancy-duck.jpg', 'red-duck.jpg', 'water-duck.jpg']
 
-            for (let x = 0; x < images.length; x++) {            
-                const element = '<img class="small-img" src="' + images[x] + '">'
+            for (let x = 0; x < images.length; x++) {      
+                let id = images[x]      
+                const element = '<img class="small-img" src="' + images[x] + '"><button id="' + images[x] + '" onclick="addToStorage(this)">SAVE</button>'
                 document.querySelector('.images').innerHTML += element;
             }
 
