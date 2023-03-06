@@ -4,13 +4,14 @@ function addImage1() {
 
 function populate() {
     const image = localStorage.getItem('image1');
-    document.getElementById("collectedImage1").src="image";
+    document.getElementById("collectedImage1").src = "image";
 }
 
 function remove(element) {
     localStorage.removeItem(element);
     element.parentElement.remove();
-    
+    removeDuck();
+
 }
 
 function addToStorage(element) {
@@ -19,9 +20,9 @@ function addToStorage(element) {
 
 function addDuck() {
     alert("Duck has been added!");
-  }
+}
 
-  function removeDuck() {
+function removeDuck() {
     alert("Duck has been removed!");
-  }
+}
 

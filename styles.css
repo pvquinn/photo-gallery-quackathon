@@ -1,94 +1,85 @@
 * {
-        box-sizing: border-box;
-    }
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: rgb(30, 197, 194);
-        padding: 20px;
-        font-family: Arial;
-    }
+body {
+    background-color: rgb(30, 197, 194);
+    padding: 20px;
+    font-family: Arial;
+}
 
-    /* Center website */
-    .main {
-        max-width: 1000px;
-        margin: auto;
-    }
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
 
-    h1 {
-        font-size: 50px;
-        word-break: break-all;
-        background-image: linear-gradient( rgb(229, 255, 0),rgb(253, 127, 1));
-        color: #ff5100;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 50%;
-        text-align: center;
-        font-family: 'Trebuchet MS'
-    }
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    background-image: linear-gradient(rgb(229, 255, 0), rgb(253, 127, 1));
+    color: #ff5100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Trebuchet MS'
+}
 
-    h2 {
-        color: rgb(246, 255, 0);
-        border-bottom-color: #ff5100;
-    }
+h2 {
+    color: rgb(246, 255, 0);
+    border-bottom-color: #ff5100;
+}
 
-    p {
-        color: rgb(246, 255, 0);
-    }
+p {
+    color: rgb(246, 255, 0);
+}
 
-    .duck{
-        color: rgb(246, 255, 0);
-    }
+.duck {
+    color: rgb(246, 255, 0);
+}
 
-    .row {
-        margin: 8px -16px;
-    }
+.row {
+    margin: 8px -16px;
+}
 
-    /* Add padding BETWEEN each column (if you want) */
-    .row,
-    .row>.column {
-        padding: 8px;
-    }
+.row,
+.row>.column {
+    padding: 8px;
+}
 
-    /* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
     .column {
-        float: left;
-        width: 25%;
+        width: 50%;
     }
+}
 
-    /* Clear floats after rows */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
     }
+}
 
-    /* Content */
-    .content {
-        background-color: white;
-        padding: 10px;
-    }
+.small-img {
+    max-width: 20%;
+    height: auto;
+}
 
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 900px) {
-        .column {
-            width: 50%;
-        }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column {
-            width: 100%;
-        }
-    }
-
-    .small-img {
-        max-width: 20%;
-        height: auto;
-    }
-
-    .img-card {
-        float: left;
-    }
-
-   
+.img-card {
+    float: left;
+}

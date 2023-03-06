@@ -9,32 +9,23 @@
     <title>Photo Gallery</title>
 </head>
 
-<!-- water-duck Photo by <a href="https://unsplash.com/es/@rajvir91?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rajvir Kaur</a> on <a href="https://unsplash.com/photos/cGiVuR_hCK0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by big-duck <a href="https://unsplash.com/@ross_savchyn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rostyslav Savchyn</a> on <a href="https://unsplash.com/photos/-nqlMPecTWQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by red-duck <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings</a> on <a href="https://unsplash.com/photos/d5sK_-sVFSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Al Elmes</a> on <a href="https://unsplash.com/photos/F-xE9lTsbd4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   -->
-
 <body>
     <div class="main">
 
         <h1>Duck Bar</h1>
-   
+
 
         <h2>Your Favorite Ducks!</h2>
         <p>Need to add more? Head back to the <a onclick="populate()" href="index.html">Gallery</a></p>
 
         <div>
             <p>Ducks:</p>
-            <p>
+
             <div class="images"></div>
         </div>
         <script>
             let images = []
-            
+
 
             for (let i = 0; i < localStorage.length; i++) {
                 let key = localStorage.key(i);
@@ -43,13 +34,13 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
 
             for (let x = 0; x < images.length; x++) {
                 let id = images[x];
-                const element = '<div><img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="remove(this);removeDuck()">REMOVE</button> <hr> </div>';
+                const element = '<div><img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="remove(this)">REMOVE</button> <hr> </div>';
                 document.querySelector('.images').innerHTML += element;
             }
 
         </script>
 
-       <div id="message" hidden>Message</div>
+        <div id="message" hidden>Message</div>
 
     </div>
     <script src="index.js"></script>

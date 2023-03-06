@@ -9,15 +9,6 @@
     <title>Photo Gallery</title>
 </head>
 
- <!-- water-duck Photo by <a href="https://unsplash.com/es/@rajvir91?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rajvir Kaur</a> on <a href="https://unsplash.com/photos/cGiVuR_hCK0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by big-duck <a href="https://unsplash.com/@ross_savchyn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rostyslav Savchyn</a> on <a href="https://unsplash.com/photos/-nqlMPecTWQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by red-duck <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings</a> on <a href="https://unsplash.com/photos/d5sK_-sVFSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Al Elmes</a> on <a href="https://unsplash.com/photos/F-xE9lTsbd4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   -->
-
 <body>
     <div class="main">
 
@@ -27,52 +18,19 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
 
         <div>
             <p>Ducks:</p>
-            <p>
             <div class="images"></div>
         </div>
-        <script> 
-                const images = ['big-duck.jpg', 'fancy-duck.jpg', 'red-duck.jpg', 'water-duck.jpg']
+        <script>
+            const images = ['big-duck.jpg', 'fancy-duck.jpg', 'red-duck.jpg', 'water-duck.jpg']
 
-            for (let x = 0; x < images.length; x++) {      
-                let id = images[x]      
+            for (let x = 0; x < images.length; x++) {
+                let id = images[x]
                 const element = '<img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="addToStorage(this);addDuck();">SAVE</button> \n <hr>'
                 document.querySelector('.images').innerHTML += element;
             }
 
         </script>
-        
 
-        <!-- Portfolio Gallery Grid -->
-        <!-- <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img id="image1" src="big-duck.jpg" alt="big duck" style="width:100%" >
-                    <h3>Like This Duck? Click the button to save it to your collection.</h3>
-                    <button onclick="addImage1()" >SAVE</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="fancy-duck.jpg" alt="fancy duck" style="width:100%">
-                    <h3>Like This Duck? Click the button to save it to your collection.</h3>
-                    <button>SAVE</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="red-duck.jpg" alt="red duck" style="width:100%">
-                    <h3>Like This Duck? Click the button to save it to your collection.</h3>
-                    <button>SAVE</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="water-duck.jpg" alt="water-duck" style="width:100%">
-                    <h3>Like This Duck? Click the button to save it to your collection.</h3>
-                    <button>SAVE</button>
-                </div>
-            </div>
-        </div> -->
 
     </div>
     <script src="index.js"></script>
