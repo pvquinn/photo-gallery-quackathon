@@ -40,7 +40,7 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
 
             for (let x = 0; x < images.length; x++) {
                 let id = images[x];
-                const element = '<div><img class="small-img" src="' + images[x] + '"><button id="' + images[x] + '" onclick="remove(this)">REMOVE</button></div>';
+                const element = '<div><img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="remove(this);removeDuck();">REMOVE</button> <hr> </div>';
                 document.querySelector('.images').innerHTML += element;
             }
 

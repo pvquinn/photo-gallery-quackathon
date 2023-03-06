@@ -16,4 +16,11 @@ function addToStorage(element) {
     localStorage.setItem(element.id, "image");
 }
 
+function addDuck() {
+    alert("Duck has been added!");
+  }
+
+  function removeDuck() {
+    alert("Duck has been removed!");
+  }
 
