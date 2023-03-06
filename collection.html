@@ -22,16 +22,19 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
     <div class="main">
 
         <h1>Duck Bar</h1>
-        <hr>
+   
 
-        <h2>Your Favorite Ducks</h2>
+        <h2>Your Favorite Ducks!</h2>
         <p>Need to add more? Head back to the <a onclick="populate()" href="index.html">Gallery</a></p>
 
-        <div>Ducks:
+        <div>
+            <p>Ducks:</p>
+            <p>
             <div class="images"></div>
         </div>
         <script>
             let images = []
+            
 
             for (let i = 0; i < localStorage.length; i++) {
                 let key = localStorage.key(i);
@@ -40,12 +43,13 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
 
             for (let x = 0; x < images.length; x++) {
                 let id = images[x];
-                const element = '<div><img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="remove(this);removeDuck();">REMOVE</button> <hr> </div>';
+                const element = '<div><img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="remove(this);removeDuck()">REMOVE</button> <hr> </div>';
                 document.querySelector('.images').innerHTML += element;
             }
 
         </script>
 
+       <div id="message" hidden>Message</div>
 
     </div>
     <script src="index.js"></script>

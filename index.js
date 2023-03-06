@@ -10,6 +10,7 @@ function populate() {
 function remove(element) {
     localStorage.removeItem(element);
     element.parentElement.remove();
+    
 }
 
 function addToStorage(element) {
