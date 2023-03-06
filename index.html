@@ -22,12 +22,12 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
     <div class="main">
 
         <h1>Duck Bar</h1>
-        <hr>
-
         <h2>Pick your favorite ducks!</h2>
         <p>Like a duck? Add it to <a onclick="populate()" href="collection.html">Your Collection</a></p>
 
-        <div>Ducks:
+        <div>
+            <p>Ducks:</p>
+            <p>
             <div class="images"></div>
         </div>
         <script> 
@@ -35,7 +35,7 @@ Photo by fancy-duck <a href="https://unsplash.com/@alelmes?utm_source=unsplash&u
 
             for (let x = 0; x < images.length; x++) {      
                 let id = images[x]      
-                const element = '<img class="small-img" src="' + images[x] + '"><button id="' + images[x] + '" onclick="addToStorage(this)">SAVE</button>'
+                const element = '<img class="small-img" src="' + images[x] + '"> \n <button id="' + images[x] + '" onclick="addToStorage(this);addDuck();">SAVE</button> \n <hr>'
                 document.querySelector('.images').innerHTML += element;
             }
 

@@ -3,7 +3,7 @@
     }
 
     body {
-        background-color: #f1f1f1;
+        background-color: rgb(30, 197, 194);
         padding: 20px;
         font-family: Arial;
     }
@@ -17,6 +17,26 @@
     h1 {
         font-size: 50px;
         word-break: break-all;
+        background-image: linear-gradient( rgb(229, 255, 0),rgb(253, 127, 1));
+        color: #ff5100;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 50%;
+        text-align: center;
+        font-family: 'Trebuchet MS'
+    }
+
+    h2 {
+        color: rgb(246, 255, 0);
+        border-bottom-color: #ff5100;
+    }
+
+    p {
+        color: rgb(246, 255, 0);
+    }
+
+    .duck{
+        color: rgb(246, 255, 0);
     }
 
     .row {
@@ -70,3 +90,5 @@
     .img-card {
         float: left;
     }
+
+   
